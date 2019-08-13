@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name headers)(type KiCad)(uri /home/abuchan/projects/klein_badge/klein_badge/headers.pretty)(options "")(descr ""))
+)
