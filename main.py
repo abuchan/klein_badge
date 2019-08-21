@@ -83,8 +83,14 @@ def chase(i):
     neopixels[p] = wheel(idx & 255)
   neopixels.show()
 
-shows = [chase, random_walk]
-names = ["chase", "random_walk"]
+def stripes(i):
+  for p in range(NUMPIXELS):
+    idx = int ((p * 256 / NUMPIXELS) + i)
+    neopixels[p] = wheel(((idx * 5) % 256) & 255)
+  neopixels.show()
+
+shows = [chase, random_walk, stripes]
+names = ["chase", "random_walk", "stripes"]
 
 show_idx = 0
 
